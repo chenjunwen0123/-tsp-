@@ -65,7 +65,7 @@ city_pos_list = np.array([[0.48039628 ,0.23975031],
 ```
 并通过调用自定义的函数`build_dist_mat`生成城市的距离矩阵（n*n矩阵，n是城市数量）
 元素`[i ,j]  = [j ,i] `表示 i 城市到 j 城市的距离
-```
+```python
 def build_dist_mat(input_list):
     n = config.city_num
     dist_mat = np.zeros([n, n])
@@ -140,7 +140,7 @@ class Individual:
 
 ### Ga 类
 遗传算法的过程定义在种群类 Ga 中：
-```
+```python
 class Ga:
     def __init__(self, input_):     #input_ :城市距离矩阵
         global city_dist_mat
