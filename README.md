@@ -200,8 +200,8 @@ def next_gen(self):
 
 #### 交叉 cross
 1. 打乱种群个体，以步长为2遍历抽样（保证随机性）  
-2. 利用深拷贝取样，genes1和gene2分别拷贝父样本和母样本的基因序列（路线）  
-3. 选取基因片段[index1,index2]，并将初始基因片段中基因和其对应的位置以value:id 键值对形式分别存入字典pos1_recorder和 pos2_recorder  
+2. 利用深拷贝取样，`genes1`和`genes2`分别拷贝父样本和母样本的基因序列（路线）  
+3. 选取基因片段[index1...index2]，并将初始基因片段中基因和其对应的位置以value:id 键值对形式分别存入字典`pos1_recorder`和 `pos2_recorder`  
 4. 将这两段基因进行交换  
 genes1:[1,**2,3,4**,5]  
 genes2:[1,**4,5,3**,2]  
